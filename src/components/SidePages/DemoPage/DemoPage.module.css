@@ -1,0 +1,38 @@
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 3%;
+}
+
+.table-page :hover {
+    cursor: pointer;
+}
+
+.table-text {
+    color: chartreuse;
+    font-size: x-large;
+}
+
+.table-link {
+    color: red;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.table-styles {
+    width: 700px;
+    height: 700px;
+    border-color: floralwhite;
+    border-style: solid;
+}
