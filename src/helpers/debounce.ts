@@ -1,9 +1,9 @@
-export const debounce = (fetchData: (arg: string) => void, delay: number) => {
+export const debounce = <T> (func: (...arg: T[]) => void, delay: number) => {
     let timeout: NodeJS.Timeout;
-    return (arg: string) => {
+    return (...arg: T[]) => {
         clearTimeout(timeout);
         timeout = setTimeout(() => {
-            fetchData(arg);
+            func(...arg);
         }, delay);
     };
 }

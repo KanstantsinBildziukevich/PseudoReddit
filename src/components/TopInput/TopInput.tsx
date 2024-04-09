@@ -1,11 +1,18 @@
 import React from 'react';
-import './styled.css';
-import {TopButtonProps} from './TopButton.types';
+import {TopInputProps} from './TopInput.types';
+import styles from './TopInput.module.css'
 
-export const TopButton: React.FC<TopButtonProps> = ({ onClick }) => {
+export const TopInput: React.FC<TopInputProps> = ({ value, onChange }) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        onChange(e.target.value);
+    };
+
     return (
-        <button className="top-button" onClick={onClick}>
-            Run Pseudo Reddit
-        </button>
+        <input
+            className={styles.topInput}
+            type="search"
+            value={value}
+            onChange={handleInputChange}
+        />
     );
 };

@@ -1,11 +1,12 @@
-.table-wrapper {
+.tableWrapper {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.table-page{
+.tablePage{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,22 +16,22 @@
     margin-left: 3%;
 }
 
-.table-page :hover {
+.tablePage :hover {
     cursor: pointer;
 }
 
-.table-text {
+.tableText {
     color: chartreuse;
     font-size: x-large;
 }
 
-.table-link {
+.tableLink {
     color: red;
     font-size: x-large;
     text-decoration: none;
 }
 
-.table-styles {
+.tableStyles {
     width: 700px;
     height: 700px;
     border-color: floralwhite;

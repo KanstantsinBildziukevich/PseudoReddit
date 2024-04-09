@@ -1,0 +1,20 @@
+.topInput {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 4vh;
+    margin-top: 3%;
+    border: 3px solid indianred;
+    border-radius: 5%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-family: "Comic Sans MS", sans-serif;
+    background-image: url('../../assets/topButton.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-left: 5px;
+}

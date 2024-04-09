@@ -1,3 +1,4 @@
-export type TopButtonProps = {
-    onClick: () => void;
-};
+export interface TopInputProps {
+    value: string;
+    onChange: (value: string) => void;
+}
